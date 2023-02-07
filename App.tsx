@@ -1,15 +1,24 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import styles from './src/styles/app.scss';
+import HomeScreen from './src/screens/HomeScreen';
+import ExtraScreen from './src/screens/ExtraScreen';
+
+const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView style={styles.background}>
-      <View>
-        <Text style={styles.text}>React Native</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Home"
+          options={{headerShown: false}}
+          component={HomeScreen}
+        />
+        <Stack.Screen name="Extra" component={ExtraScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
