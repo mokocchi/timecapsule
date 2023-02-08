@@ -35,6 +35,5 @@
 }
 
 .clock {
-  @include font-size(40px);
-  color: $primary
+  color: $primary;
 }

@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {faStopwatch} from '@fortawesome/free-solid-svg-icons/faStopwatch';
 import translate from '../i18n/translate';
 
 import styles from '../stylesheets/screens/_splash-screen.scss';
@@ -15,7 +17,7 @@ function SplashScreen({navigation}): JSX.Element {
 
   useEffect(() => {
     if (loaded) {
-      //navigation.replace('Home');
+      navigation.replace('Home');
     }
   }, [navigation, loaded]);
 
@@ -26,7 +28,7 @@ function SplashScreen({navigation}): JSX.Element {
         <Text style={styles.subtitle}>{translate('splash.subtitle')}</Text>
       </View>
       <View style={styles.bottom}>
-        <Text style={styles.clock}>{'Tic toc'}</Text>
+        <FontAwesomeIcon icon={faStopwatch} style={styles.clock} size={90} />
       </View>
     </SafeAreaView>
   );
