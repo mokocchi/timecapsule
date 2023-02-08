@@ -3210,6 +3210,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:*":
+  version: 9.1.1
+  resolution: "bignumber.js@npm:9.1.1"
+  checksum: ad243b7e2f9120b112d670bb3d674128f0bd2ca1745b0a6c9df0433bd2c0252c43e6315d944c2ac07b4c639e7496b425e46842773cf89c6a2dcd4f31e5c4b11e
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -4983,13 +4990,16 @@ __metadata:
     babel-plugin-react-native-classname-to-style: ^1.2.2
     babel-plugin-react-native-platform-specific-extensions: ^1.1.1
     eslint: ^8.19.0
+    i18n-js: ^4.2.2
     jest: ^29.2.1
+    lodash.memoize: ^4.1.2
     metro-config: ^0.75.0
     metro-react-native-babel-preset: 0.73.7
     prettier: ^2.4.1
     react: 18.2.0
     react-native: 0.71.2
     react-native-cli: ^2.0.1
+    react-native-localize: ^2.2.4
     react-native-safe-area-context: ^4.5.0
     react-native-sass-transformer: ^2.0.0
     react-native-screens: ^3.19.0
@@ -5469,6 +5479,16 @@ __metadata:
   dependencies:
     ms: ^2.0.0
   checksum: 9c7a74a2827f9294c009266c82031030eae811ca87b0da3dceb8d6071b9bde22c9f3daef0469c3c533cc67a97d8a167cd9fc0389350e5f415f61a79b171ded16
+  languageName: node
+  linkType: hard
+
+"i18n-js@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "i18n-js@npm:4.2.2"
+  dependencies:
+    bignumber.js: "*"
+    lodash: "*"
+  checksum: 288968783c4455caa4f1041e41be521731a04fb0b7e02c4b5fddd7538baa5621ae96ec4ee0f6151d417593a95f502ea5809165880c9ea5d246f228b79c2872ca
   languageName: node
   linkType: hard
 
@@ -6880,6 +6900,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.memoize@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "lodash.memoize@npm:4.1.2"
+  checksum: 9ff3942feeccffa4f1fafa88d32f0d24fdc62fd15ded5a74a5f950ff5f0c6f61916157246744c620173dddf38d37095a92327d5fd3861e2063e736a5c207d089
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -6894,7 +6921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21":
+"lodash@npm:*, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -8799,6 +8826,23 @@ __metadata:
   version: 0.71.14
   resolution: "react-native-gradle-plugin@npm:0.71.14"
   checksum: fc2599cdc6b64f09cdd1ad9b0aa6b45265b5905d13ab69174f46134d7a42b324459e169b0aaef67e075b5b65fe93704980718fd2c26245ef2b1d5fd29e391813
+  languageName: node
+  linkType: hard
+
+"react-native-localize@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "react-native-localize@npm:2.2.4"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-native: ">=0.60.0"
+    react-native-macos: ">=0.64.0"
+    react-native-windows: ">=0.62.0"
+  peerDependenciesMeta:
+    react-native-macos:
+      optional: true
+    react-native-windows:
+      optional: true
+  checksum: cfa3c4d723c07a9e6aa16fbe98a784f40fdf5cdb8ca793450a55b04884f5bd05385d9cf6b9d385852203d1271a06b50bcece77dc6923b851ec9c1c10dada4099
   languageName: node
   linkType: hard
 

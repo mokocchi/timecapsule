@@ -1,0 +1,40 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
+.background {
+  background-color: $primary;
+  flex: 1;
+}
+
+.top {
+  padding: to-rem(20);
+  height: 70%;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.bottom {
+  background-color: white;
+  height: 30%; 
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  @include font-size(60px);
+  font-weight: 700;
+  color: white;
+}
+
+.subtitle {
+  @include font-size(25px);
+  color: white;
+}
+
+.clock {
+  @include font-size(40px);
+  color: $primary
+}
