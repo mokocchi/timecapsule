@@ -1,13 +1,31 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
 .background {
-  background-color: teal;
+  background-color: $primary;
   color: white;
   flex: 1;
   justify-content: center;
   align-items: center;
 }
 
+.view {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+}
+
 .text {
-  font-family: 'monospace';
-  font-weight: 700;
-  font-size: 2rem;
+  @include font-size(20px);
+  background-color: white;
+}
+
+.gap {
+  background-color: $primary;
+  height: to-rem(50);
+}
+
+.icon {
+  padding: to-rem(20);
 }

@@ -2,5 +2,8 @@
   "splash": {
     "title": "Time capsule",
     "subtitle": "How about now?"
+  },
+  "common": {
+    "appName": "Time Capsule"
   }
 }

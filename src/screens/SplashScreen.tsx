@@ -12,7 +12,7 @@ function SplashScreen({navigation}): JSX.Element {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 3000);
+    }, 1000);
   }, []);
 
   useEffect(() => {

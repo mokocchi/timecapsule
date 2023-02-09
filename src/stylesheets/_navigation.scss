@@ -1,0 +1,15 @@
+@import 'mixins/font-size';
+@import 'functions/to-rem.scss';
+@import 'base/variables';
+
+.titleHeader {
+  background-color: $primary;
+}
+
+.titleText {
+  @include font-size(20px)
+}
+
+.menuIcon {
+  color: white;
+}
