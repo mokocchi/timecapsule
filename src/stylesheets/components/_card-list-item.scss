@@ -1,0 +1,18 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
+.card-list-item {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: to-rem(10);
+}
+
+.card-list-item__icon {
+  color: $secondary;
+}  
+
+.card-list-item__text {
+  @include font-size(20px);
+}

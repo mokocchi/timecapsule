@@ -1,0 +1,20 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
+.card-list {
+  background-color: white;
+  padding: to-rem(10) to-rem(20) to-rem(10) to-rem(20);
+}
+
+.card-list__icon {
+  color: $secondary
+}
+
+.card-list__title {
+  @include font-size(25px);
+  color: $primary;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: to-rem(10);
+}

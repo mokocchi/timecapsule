@@ -1,6 +1,8 @@
+import {faStopwatch} from '@fortawesome/free-solid-svg-icons/faStopwatch';
 import {FAB} from '@rneui/base';
 import React from 'react';
 import {SafeAreaView, Text, ScrollView, View} from 'react-native';
+import CardList from '../components/CardList';
 
 import styles from '../stylesheets/screens/_home-screen.scss';
 
@@ -13,12 +15,13 @@ const lockedList = [
   '8 days to unlock\n\n',
   '9 days to unlock\n\n',
 ];
+const available = [{name: 'Milanesas'}, {name: 'Helado'}];
 
 function HomeScreen({navigation}): JSX.Element {
   return (
     <SafeAreaView style={styles.background}>
       <ScrollView style={styles.view}>
-        <Text style={styles.text}>*Available*</Text>
+        <CardList title="Available" icon={faStopwatch} items={available} />
         {lockedList.map((item, index) => (
           <View key={`locked-list${index}`}>
             <View style={styles.gap} />
