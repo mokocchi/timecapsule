@@ -1,7 +1,6 @@
 import React from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
-
-import styles from '../stylesheets/screens/_extra-screen.scss';
+import {styles} from '../utils/styles';
 
 function ExtraScreen(): JSX.Element {
   return (

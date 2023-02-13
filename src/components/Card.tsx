@@ -1,7 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-
-import styles from '../stylesheets/components/_card.scss';
+import {styles} from '../utils/styles';
 
 type CardProps = {
   title: string;
