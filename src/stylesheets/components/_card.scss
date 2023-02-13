@@ -2,16 +2,12 @@
 @import '../functions/to-rem.scss';
 @import '../base/variables';
 
-.card-list {
+.card {
   background-color: white;
   padding: to-rem(10) to-rem(20) to-rem(10) to-rem(20);
 }
 
-.card-list__icon {
-  color: $secondary
-}
-
-.card-list__title {
+.card__title {
   @include font-size(25px);
   color: $primary;
   font-weight: 700;

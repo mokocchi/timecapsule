@@ -3,16 +3,16 @@ import {Button} from '@rneui/themed';
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import styles from '../stylesheets/components/_card-list-item.scss';
+import styles from '../stylesheets/components/_list-item.scss';
 
-function CardListItem({name, icon, action}) {
+function ListItem({name, icon, action}) {
   return (
-    <View style={styles['card-list-item']}>
-      <Text style={styles['card-list-item__text']}>{name}</Text>
+    <View style={styles['list-item']}>
+      <Text style={styles['list-item__text']}>{name}</Text>
       <Button type="clear" onPress={action}>
         <FontAwesomeIcon
           icon={icon}
-          style={styles['card-list-item__icon']}
+          style={styles['list-item__icon']}
           size={30}
         />
       </Button>
@@ -20,4 +20,4 @@ function CardListItem({name, icon, action}) {
   );
 }
 
-export default CardListItem;
+export default ListItem;

@@ -2,7 +2,8 @@ import {faStopwatch} from '@fortawesome/free-solid-svg-icons/faStopwatch';
 import {FAB} from '@rneui/base';
 import React from 'react';
 import {SafeAreaView, Text, ScrollView, View} from 'react-native';
-import CardList from '../components/CardList';
+import Card from '../components/Card';
+import ListItem from '../components/ListItem';
 
 import styles from '../stylesheets/screens/_home-screen.scss';
 
@@ -21,7 +22,16 @@ function HomeScreen({navigation}): JSX.Element {
   return (
     <SafeAreaView style={styles.background}>
       <ScrollView style={styles.view}>
-        <CardList title="Available" icon={faStopwatch} items={available} />
+        <Card title="Available" icon={faStopwatch}>
+          {available.map((item, index) => (
+            <ListItem
+              key={`card-list-item-${index}`}
+              name={item.name}
+              icon={faStopwatch}
+              action={() => console.log('item')}
+            />
+          ))}
+        </Card>
         {lockedList.map((item, index) => (
           <View key={`locked-list${index}`}>
             <View style={styles.gap} />
