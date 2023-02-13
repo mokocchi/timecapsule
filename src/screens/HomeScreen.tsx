@@ -6,6 +6,7 @@ import {SafeAreaView, Text, ScrollView, View} from 'react-native';
 import {RootStackParamList} from '../../App';
 import Card from '../components/Card';
 import ListItem from '../components/ListItem';
+import LockedItemsList from '../components/LockedItemsList';
 
 import styles from '../stylesheets/screens/_home-screen.scss';
 
@@ -38,10 +39,7 @@ function HomeScreen(props: HomeScreenProps): JSX.Element {
           ))}
         </Card>
         {lockedList.map((item, index) => (
-          <View key={`locked-list${index}`}>
-            <View style={styles.gap} />
-            <Text style={styles.text}>{item}</Text>
-          </View>
+          <LockedItemsList key={`locked-list${index}`} />
         ))}
       </ScrollView>
       <FAB

@@ -1,0 +1,7 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
+.locked-items-list__icon {
+    color: $secondary;
+}

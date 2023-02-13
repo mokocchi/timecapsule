@@ -3,6 +3,9 @@
     "title": "Time capsule",
     "subtitle": "How about now?"
   },
+  "lockedItemsList": {
+    "title": "days to unlock"
+  },
   "common": {
     "appName": "Time Capsule"
   }

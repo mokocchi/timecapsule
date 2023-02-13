@@ -1,0 +1,32 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
+.collapsable-card {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: to-rem(20);
+    padding-top: to-rem(10);
+    padding-bottom: to-rem(10);
+}
+
+.collapsable-card__badge {
+    width: to-rem(50);
+    padding-left: to-rem(5);
+    padding-right: to-rem(5);
+}
+
+.collapsable-card__button {
+    width: to-rem(50);
+    padding-left: to-rem(5);
+    padding-right: to-rem(5);
+}
+
+.collapsable-card__title {
+    @include font-size(20px);
+    align-self: center;
+    font-weight: 700;
+    color: $secondary;
+}

@@ -1,0 +1,18 @@
+@import '../mixins/font-size';
+@import '../functions/to-rem.scss';
+@import '../base/variables';
+
+.number-badge {
+    background-color: $secondary;
+    border-radius: to-rem(20);
+    width: to-rem(40);
+    height: to-rem(30);
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-badge__text {
+    color: white;
+    font-weight: 700;
+}
