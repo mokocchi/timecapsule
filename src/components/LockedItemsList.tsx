@@ -3,10 +3,9 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {Button} from '@rneui/themed';
 import React from 'react';
 import translate from '../i18n/translate';
+import {styles} from '../utils/styles';
 import CollapsableCard from './CollapsableCard';
 import NumberBadge from './NumberBadge';
-
-import styles from '../stylesheets/components/_locked-items-list.scss';
 
 type LockedItemsListProps = {};
 

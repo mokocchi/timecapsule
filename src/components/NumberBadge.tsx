@@ -1,8 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native';
 import {View} from 'react-native';
-
-import styles from '../stylesheets/components/_number-badge.scss';
+import {styles} from '../utils/styles';
 
 type NumberBadgeProps = {
   number: number;
