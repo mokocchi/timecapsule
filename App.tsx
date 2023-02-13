@@ -1,8 +1,6 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import styles from './src/stylesheets/_navigation.scss';
-
 import HomeScreen from './src/screens/HomeScreen';
 import ExtraScreen from './src/screens/ExtraScreen';
 import SplashScreen from './src/screens/SplashScreen';
@@ -10,6 +8,7 @@ import translate from './src/i18n/translate';
 import {faListDots} from '@fortawesome/free-solid-svg-icons/faListDots';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {Button} from '@rneui/themed';
+import {styles} from './src/utils/styles';
 
 export type RootStackParamList = {
   Splash: undefined;

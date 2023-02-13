@@ -3,8 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {Button} from '@rneui/themed';
 import React from 'react';
 import {View, Text} from 'react-native';
-
-import styles from '../stylesheets/components/_list-item.scss';
+import {styles} from '../utils/styles';
 
 type ListItemProps = {
   name: string;

@@ -6,7 +6,7 @@ import {faStopwatch} from '@fortawesome/free-solid-svg-icons/faStopwatch';
 import translate from '../i18n/translate';
 
 import {RootStackParamList} from '../../App';
-import styles from '../stylesheets/screens/_splash-screen.scss';
+import {styles} from '../utils/styles';
 
 type SplashScreenProps = NativeStackScreenProps<RootStackParamList, 'Splash'>;
 
@@ -27,12 +27,16 @@ function SplashScreen(props: SplashScreenProps): JSX.Element {
   }, [navigation, loaded]);
 
   return (
-    <SafeAreaView style={styles.background}>
-      <View style={styles.top}>
-        <Text style={styles.title}>{translate('splash.title')}</Text>
-        <Text style={styles.subtitle}>{translate('splash.subtitle')}</Text>
+    <SafeAreaView style={styles['splash-screen']}>
+      <View style={styles['splash-screen__top']}>
+        <Text style={styles['splash-screen__title']}>
+          {translate('splash.title')}
+        </Text>
+        <Text style={styles['splash-screen__subtitle']}>
+          {translate('splash.subtitle')}
+        </Text>
       </View>
-      <View style={styles.bottom}>
+      <View style={styles['splash-screen__bottom']}>
         <FontAwesomeIcon icon={faStopwatch} style={styles.clock} size={90} />
       </View>
     </SafeAreaView>
