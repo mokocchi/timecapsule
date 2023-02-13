@@ -1,12 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import {SafeAreaView, Text, View} from 'react-native';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faStopwatch} from '@fortawesome/free-solid-svg-icons/faStopwatch';
 import translate from '../i18n/translate';
 
+import {RootStackParamList} from '../../App';
 import styles from '../stylesheets/screens/_splash-screen.scss';
 
-function SplashScreen({navigation}): JSX.Element {
+type SplashScreenProps = NativeStackScreenProps<RootStackParamList, 'Splash'>;
+
+function SplashScreen(props: SplashScreenProps): JSX.Element {
+  const {navigation} = props;
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {

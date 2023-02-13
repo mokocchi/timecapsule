@@ -11,7 +11,13 @@ import {faListDots} from '@fortawesome/free-solid-svg-icons/faListDots';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {Button} from '@rneui/themed';
 
-const Stack = createNativeStackNavigator();
+export type RootStackParamList = {
+  Splash: undefined;
+  Home: undefined;
+  Extra: undefined;
+};
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function App(): JSX.Element {
   const renderMenuIcon = () => (
